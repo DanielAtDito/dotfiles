@@ -1,5 +1,9 @@
+set nocompatible
+filetype off
+
 syntax on
 set relativenumber
+set number
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
