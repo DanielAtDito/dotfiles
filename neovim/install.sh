@@ -9,3 +9,4 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubuserc
 sudo pip2 install neovim
 sudo pip3 install neovim
 nvim +PlugInstall +qall
+~/.vim/plugged/YouCompleteMe/install.py --gocode-completer --tern-completer

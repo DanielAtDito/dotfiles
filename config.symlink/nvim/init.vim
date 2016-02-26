@@ -1,6 +1,7 @@
 syntax on
 set number
 set relativenumber
+set cursorline
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -15,6 +16,8 @@ imap jk <Esc>
 let mapleader="\<SPACE>"
 noremap <Leader>q :wq<CR>
 noremap <Leader>w :w<CR>
+noremap <Leader>n :NERDTreeToggle<CR>
+noremap <Leader><Leader>s :source ~/.config/nvim/init.vim
 
 " More natural splits
 set splitbelow
@@ -27,17 +30,27 @@ nnoremap <C-H> <C-W><C-H>
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'easymotion/vim-easymotion'
 Plug 'janko-m/vim-test'
 Plug 'benekastah/neomake'
-Plug 'Valloric/YouCompleteMe'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
+Plug 'Valloric/YouCompleteMe'
 " Add plugins to &runtimepath
 call plug#end()
+
+
+" custom key bindinds
+"
+" ycm
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>', '<Up>']
+
+
 
