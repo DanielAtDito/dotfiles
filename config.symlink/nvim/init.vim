@@ -1,8 +1,8 @@
 syntax on
-colorscheme molokai
 set number
 set relativenumber
 set cursorline
+set cursorcolumn
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -48,6 +48,7 @@ Plug 'Valloric/YouCompleteMe'
 " Add plugins to &runtimepath
 call plug#end()
 
+colorscheme molokai
 
 " custom key bindinds
 "
