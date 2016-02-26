@@ -1,4 +1,5 @@
 syntax on
+colorscheme molokai
 set number
 set relativenumber
 set cursorline
@@ -17,7 +18,8 @@ let mapleader="\<SPACE>"
 noremap <Leader>q :wq<CR>
 noremap <Leader>w :w<CR>
 noremap <Leader>n :NERDTreeToggle<CR>
-noremap <Leader><Leader>s :source ~/.config/nvim/init.vim
+noremap <Leader><Leader>s :source ~/.config/nvim/init.vim<CR>
+noremap <Leader><Leader>b :b#<CR>
 
 " More natural splits
 set splitbelow
@@ -30,6 +32,7 @@ nnoremap <C-H> <C-W><C-H>
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'easymotion/vim-easymotion'
