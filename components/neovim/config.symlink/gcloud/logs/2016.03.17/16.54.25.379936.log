@@ -1,0 +1,58 @@
+2016-03-17 16:54:25,392 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2016-03-17 16:54:25,393 DEBUG    root            Running gcloud.init with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.init', usage=None, description='Initialize or reinitialize gcloud.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x7f6043793050>>, command_path=['gcloud', 'init'], configuration=None, console_only=False, credential_file_override=None, document=None, format=None, h=None, help=None, http_timeout=None, log_http=None, obsolete_project_arg=None, project=None, quiet=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity=None, version=None).
+2016-03-17 16:54:25,394 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2016-03-17 16:54:25,394 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2016-03-17 16:54:25,397 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2016-03-17 16:54:25,398 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'list']
+2016-03-17 16:54:25,398 INFO     root            Executing: [gcloud config configurations list]
+2016-03-17 16:54:25,399 DEBUG    root            Running gcloud.config.configurations.list with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.config.configurations.list', usage=None, description='Lists existing named configurations.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x7f60436e8b10>>, command_path=['gcloud', 'config', 'configurations', 'list'], configuration=None, credential_file_override=None, document=None, format=None, h=None, help=None, http_timeout=None, log_http=None, project=None, quiet=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled='false', verbosity='none', version=None).
+2016-03-17 16:54:25,399 INFO     root            Display disabled.
+2016-03-17 16:54:25,400 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'create']
+2016-03-17 16:54:25,401 INFO     root            Executing: [gcloud config configurations create default]
+2016-03-17 16:54:25,402 DEBUG    root            Running gcloud.config.configurations.create with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.config.configurations.create', usage=None, description='Creates a new named configuration.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x7f6043671650>>, command_path=['gcloud', 'config', 'configurations', 'create'], configuration=None, configuration_name='default', credential_file_override=None, document=None, format=None, h=None, help=None, http_timeout=None, log_http=None, project=None, quiet=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled='false', verbosity='none', version=None).
+2016-03-17 16:54:25,402 INFO     ___FILE_ONLY___ Created [default].
+
+2016-03-17 16:54:25,402 INFO     ___FILE_ONLY___ To use this configuration, activate it by running:
+  $ gcloud config configurations activate default
+
+2016-03-17 16:54:25,403 INFO     root            Display disabled.
+2016-03-17 16:54:25,403 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'activate']
+2016-03-17 16:54:25,404 INFO     root            Executing: [gcloud config configurations activate default]
+2016-03-17 16:54:25,404 DEBUG    root            Running gcloud.config.configurations.activate with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.config.configurations.activate', usage=None, description='Activates an existing named configuration.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x7f6043671590>>, command_path=['gcloud', 'config', 'configurations', 'activate'], configuration=None, configuration_name='default', credential_file_override=None, document=None, format=None, h=None, help=None, http_timeout=None, log_http=None, project=None, quiet=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled='false', verbosity='none', version=None).
+2016-03-17 16:54:25,405 INFO     ___FILE_ONLY___ Activated [default].
+
+2016-03-17 16:54:25,405 INFO     root            Display disabled.
+2016-03-17 16:54:25,406 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2016-03-17 16:54:25,406 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2016-03-17 16:54:25,407 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2016-03-17 16:54:25,408 INFO     root            Executing: [gcloud auth list]
+2016-03-17 16:54:25,409 DEBUG    root            Running gcloud.auth.list with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.auth.list', usage=None, description='Lists accounts whose credentials have been obtained using `gcloud init`,\n`gcloud auth login` and `gcloud auth activate-service-account`, and shows\nwhich account is active. The active account is used by gcloud and other Cloud\nSDK tools to access Google Cloud Platform.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x7f604368a090>>, command_path=['gcloud', 'auth', 'list'], configuration=None, credential_file_override=None, document=None, filter_account=None, format=None, h=None, help=None, http_timeout=None, log_http=None, project=None, quiet=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled='false', verbosity='none', version=None).
+2016-03-17 16:54:25,409 DEBUG    oauth2client.multistore_file Initializing empty multistore file
+2016-03-17 16:54:25,413 INFO     root            Display disabled.
+2016-03-17 16:54:25,414 INFO     ___FILE_ONLY___ You can use [gcloud config] to change more gcloud settings.
+
+
+2016-03-17 16:54:25,414 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2016-03-17 16:54:25,415 DEBUG    root            Running gcloud.config.list with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.config.list', usage=None, description='Lists all properties in your active configuration. These include the\naccount used to authorize access to the Cloud Platform, the current Cloud\nPlatform project, and the default Compute Engine region and zone, if set. See\n`gcloud topic configurations` for more information.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, all=False, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x7f604368acd0>>, command_path=['gcloud', 'config', 'list'], configuration=None, credential_file_override=None, document=None, format=None, h=None, help=None, http_timeout=None, log_http=None, project=None, property=None, quiet=None, trace_email=None, trace_log=None, trace_token=None, user_output_enabled=None, verbosity=None, version=None).
+2016-03-17 16:54:25,415 INFO     ___FILE_ONLY___ Your active configuration is: [default]
+
+
+2016-03-17 16:54:25,419 INFO     root            Explict Display.
+2016-03-17 16:54:25,419 INFO     ___FILE_ONLY___ [core]
+
+2016-03-17 16:54:25,419 INFO     ___FILE_ONLY___ account = 143110130412-compute@developer.gserviceaccount.com
+
+2016-03-17 16:54:25,419 INFO     ___FILE_ONLY___ disable_usage_reporting = False
+
+2016-03-17 16:54:25,419 INFO     ___FILE_ONLY___ project = medsis-insight
+
+2016-03-17 16:54:25,420 INFO     ___FILE_ONLY___ [metrics]
+
+2016-03-17 16:54:25,420 INFO     ___FILE_ONLY___ command_name = gcloud.config.list
+
+2016-03-17 16:54:25,420 INFO     root            Display format "default".
+2016-03-17 16:54:25,442 DEBUG    root            Metrics reporting process started...

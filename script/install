@@ -10,5 +10,11 @@ cd "$(dirname $0)"/..
 # echo "› brew bundle"
 # brew bundle
 
+# support for controlling install order
+# find the installers and run them iteratively
+find . -name install_1.sh | while read installer ; do sh -c "${installer}" ; done
+find . -name install_2.sh | while read installer ; do sh -c "${installer}" ; done
+find . -name install_3.sh | while read installer ; do sh -c "${installer}" ; done
+
 # find the installers and run them iteratively
 find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
